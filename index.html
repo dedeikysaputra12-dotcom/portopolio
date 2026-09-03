@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio Kreatif</title>
+  <style>
+    :root {
+      --bg-color: #0a0a12;
+      --card-bg: rgba(255, 255, 255, 0.05);
+      --accent-color: #00f2fe;
+      --accent-gradient: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+      --text-color: #f0f0f5;
+      --text-muted: #a0a0b0;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      line-height: 1.6;
+      padding: 2rem 1rem;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    /* Hero Section */
+    .hero {
+      text-align: center;
+      padding: 4rem 1rem;
+      background: var(--card-bg);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      margin-bottom: 3rem;
+    }
+
+    .hero h1 {
+      font-size: 2.8rem;
+      margin-bottom: 0.5rem;
+      background: var(--accent-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero p {
+      color: var(--text-muted);
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 0.8rem 1.8rem;
+      background: var(--accent-gradient);
+      color: #000;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 30px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(0, 242, 254, 0.3);
+    }
+
+    /* Section Title */
+    .section-title {
+      font-size: 1.8rem;
+      margin-bottom: 1.5rem;
+      border-left: 4px solid var(--accent-color);
+      padding-left: 0.8rem;
+    }
+
+    /* Skills Badges */
+    .skills-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+      margin-bottom: 3rem;
+    }
+
+    .skill-badge {
+      background: var(--card-bg);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 0.5rem 1.2rem;
+      border-radius: 20px;
+      font-size: 0.9rem;
+    }
+
+    /* Projects Grid */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 3rem;
+    }
+
+    .project-card {
+      background: var(--card-bg);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      padding: 1.5rem;
+      transition: transform 0.3s ease, border-color 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      border-color: var(--accent-color);
+    }
+
+    .project-card h3 {
+      margin-bottom: 0.5rem;
+    }
+
+    .project-card p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
+    }
+
+    .project-link {
+      color: var(--accent-color);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      color: var(--text-muted);
+      padding-top: 2rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <section class="hero">
+      <h1>DEDE RIZKY MAULANA</h1>
+      <p>Frontend Developer & UI/UX Enthusiast</p>
+      <a href="#kontak" class="btn">Hubungi Saya</a>
+    </section>
+
+    <div class="section-title">Keahlian</div>
+    <div class="skills-container">
+      <span class="skill-badge">HTML5 & CSS3</span>
+      <span class="skill-badge">JavaScript (ES6+)</span>
+      <span class="skill-badge">React.js</span>
+      <span class="skill-badge">Tailwind CSS</span>
+      <span class="skill-badge">UI/UX Design</span>
+      <span class="skill-badge">Git & GitHub</span>
+    </div>
+
+    <div class="section-title">Proyek Unggulan</div>
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>Aplikasi E-Commerce</h3>
+        <p>Platform belanja online berbasis React dengan integrasi payment gateway dan desain responsif.</p>
+        <a href="#" class="project-link">Lihat Detail &rarr;</a>
+      </div>
+      <div class="project-card">
+        <h3>Dashboard Analitik</h3>
+        <p>Dashboard interaktif untuk memantau data performa bisnis secara real-time dengan Chart.js.</p>
+        <a href="#" class="project-link">Lihat Detail &rarr;</a>
+      </div>
+      <div class="project-card">
+        <h3>Aplikasi Manajemen Tugas</h3>
+        <p>Alat produktivitas sederhana dengan fitur drag-and-drop dan penyimpanan lokal.</p>
+        <a href="#" class="project-link">Lihat Detail &rarr;</a>
+      </div>
+    </div>
+
+    <footer id="kontak">
+      <p>Email: dedeikysaputra12@gmail.com | GitHub: github.com/username</p>
+      <p style="margin-top: 0.5rem; font-size: 0.85rem;">&copy; 2026 Dede Rizky Maulana. All rights reserved.</p>
+    </footer>
+  </div>
+
+</body>
+</html>
